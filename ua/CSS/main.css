@@ -1,0 +1,32 @@
+*{	box-sizing: border-box;}
+
+html,body{height: ;}
+.main1
+{ 	border: 10px solid #000;
+	margin: 30px;
+	display:block;
+	position:relative;
+}
+.main1:after
+{	content:"";
+	clear: both;
+	display: block;
+}
+.div_core_text
+{	float:left;
+	width:75%;
+	margin-left: 25%;
+	padding:30px; 
+}
+.divContactInformation	
+{	padding:30px;
+	float:left;
+	width:25%;
+	background: #3a64e0; 
+	color:#eee;
+	height: 100%;
+	position:absolute;
+}
+.divContactInformation a
+{	color:#eee;
+}

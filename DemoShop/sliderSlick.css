@@ -1,0 +1,103 @@
+@import url(./slick/slick.css);
+@import url(./slick/slick-theme.css);
+/*https://code.jquery.com/jquery/
+Slick slider — jquery слайдер с большими возможностями*/
+.slider 
+{   width: 100%;
+    margin: auto;
+}
+.slick-slide 
+{   margin: 0px 20px;
+}
+.slick-slide img 
+{   width: 100%;
+}
+.slick-prev:before,
+.slick-next:before 
+{   color: black;
+}
+.slick-slide 
+{   transition: all ease-in-out .3s;
+    opacity: .2;
+} 
+.slick-active 
+{   opacity: 1;
+}
+.slick-current 
+{    opacity: 1;
+}
+.center2 h1 
+{   text-align: center;
+}
+
+.slick-prev:before
+{   content: "";
+    width: 27px;
+    height: 53px;
+    background: url("images/arrowLeft.png") 0px 0px no-repeat;
+    display: block;
+}
+.slick-prev
+{   width: 27px;
+    height: 53px;
+}
+.slick-next
+{   width: 27px;
+    height: 53px;
+}
+.slick-next:before
+{	content: "";
+    width: 27px;
+    height: 53px;
+    background: url("images/arrowRight.png") 0px 0px no-repeat;
+    display: block;
+}
+.slick-prev
+{   left: 0px;
+    z-index: 10;
+}
+[dir='rtl'] .slick-prev
+{    right: 0px;
+     left: auto;
+     z-index: 10;
+}
+.slick-next
+{   right: 0px;
+}
+[dir='rtl'] .slick-next
+{   right: auto;
+    left: 0px;
+}
+
+.slick-dots li button:before
+{   content:"";
+    border:solid white 1px;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{   background-color: rgba(255,255,255,0.5);
+}
+.slick-dots li.slick-active button:before
+{   background-color: rgba(255,255,255,1);
+    opacity: 1;
+    content:"";
+}
+.slick-dots
+{   bottom: -125px;
+}
+.slide div>h1
+{   font-size:100px;
+    color:white;
+}
+.slide >div
+{   height: 400px;
+    padding: 150px 0px;
+    text-align:center;
+    position: relative;
+}
+.slide
+{   background-color:rgba(0,0,0,0.2);
+}
